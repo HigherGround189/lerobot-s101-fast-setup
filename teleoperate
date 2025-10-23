@@ -1,0 +1,12 @@
+FOLLOWER_CALIBRATION_PATH="/home/salusmaxxer/.cache/huggingface/lerobot/calibration/robots/so101_follower/salusmaxxer_follower_arm.json"
+LEADER_CALIBRATION_PATH="/home/salusmaxxer/.cache/huggingface/lerobot/calibration/teleoperators/so101_leader/salusxmaxxer_leader_arm.json"
+
+lerobot-teleoperate \
+    --robot.type=so101_follower \
+    --robot.port="/dev/ttyACM1" \
+    --robot.calibration_dir=$FOLLOWER_CALLIBRATION_PATH \
+    --robot.id=salusmaxxer_follower_arm \
+    --teleop.type=so101_leader \
+    --teleop.port="/dev/ttyACM0" \
+    --teleop.calibration_dir=$LEADER_CALIBRATION_PATH \
+    --teleop.id=salusmaxxer_leader_arm

@@ -1,0 +1,26 @@
+(lerobot) salusmaxxer@raspberrypi:~/leScripts$ ./lerobot-calibrate-follower 
+INFO 2025-10-09 17:16:33 calibrate.py:73 {'robot': {'calibration_dir': None,
+           'cameras': {},
+           'disable_torque_on_disconnect': True,
+           'id': 'salusmaxxer_follower_arm',
+           'max_relative_target': None,
+           'port': '/dev/ttyACM0',
+           'use_degrees': False},
+ 'teleop': None}
+INFO 2025-10-09 17:16:33 follower.py:104 salusmaxxer_follower_arm SO101Follower connected.
+INFO 2025-10-09 17:16:33 follower.py:121 
+Running calibration of salusmaxxer_follower_arm SO101Follower
+Move salusmaxxer_follower_arm SO101Follower to the middle of its range of motion and press ENTER....
+Move all joints sequentially through their entire ranges of motion.
+Recording positions. Press ENTER to stop...
+
+-------------------------------------------
+-------------------------------------------
+NAME            |    MIN |    POS |    MAX
+shoulder_pan    |    750 |   2053 |   3455
+shoulder_lift   |    967 |    980 |   3335
+elbow_flex      |    725 |   2941 |   2967
+wrist_flex      |    920 |   2604 |   3235
+wrist_roll      |    147 |   2022 |   3980
+gripper         |   2034 |   2067 |   3494
+Calibration saved to /home/salusmaxxer/.cache/huggingface/lerobot/calibration/robots/so101_follower_arm.json
