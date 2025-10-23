@@ -53,7 +53,7 @@ _Replace `[...]` with your desired features._
 For a full list of optional dependencies, see:
 https://pypi.org/project/lerobot/
 
-**Troubleshooting:**
+### Troubleshooting:
 If you encounter build errors, you may need to install additional dependencies: cmake, build-essential, and ffmpeg libs. To install these for linux run:
 ```bash
 sudo apt-get install cmake build-essential python-dev pkg-config libavformat-dev libavcodec-dev libavdevice-dev libavutil-dev libswscale-dev libswresample-dev libavfilter-dev pkg-config
